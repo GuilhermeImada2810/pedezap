@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f3ed">
+  <title>Cantinho da Vila | PedeZap</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="#inicio" aria-label="PedeZap, início">Pede<span>Zap</span></a>
+    <span class="selo">CARDÁPIO DIGITAL</span>
+  </header>
+
+  <main id="inicio">
+    <section class="apresentacao" aria-labelledby="nome-loja">
+      <p class="chamada">FEITO COM CARINHO, PERTO DE VOCÊ</p>
+      <h1 id="nome-loja">Cantinho da Vila</h1>
+      <p class="descricao-loja">Lanches e doces para deixar o dia mais gostoso.</p>
+      <div class="detalhes-loja">
+        <span class="status"><span class="ponto" aria-hidden="true"></span>Aberto hoje</span>
+        <span>Retirada e entrega</span>
+      </div>
+    </section>
+
+    <section class="cardapio" aria-labelledby="titulo-cardapio">
+      <div class="titulo-secao">
+        <div>
+          <p class="chamada">ESCOLHA O SEU FAVORITO</p>
+          <h2 id="titulo-cardapio">Nosso cardápio</h2>
+        </div>
+        <span class="nota-cardapio">Preparado na hora</span>
+      </div>
+      <div id="lista-produtos" class="lista-categorias" aria-live="polite"></div>
+    </section>
+
+    <section class="carrinho" aria-labelledby="titulo-carrinho">
+      <div class="titulo-carrinho">
+        <div>
+          <p class="chamada">SEU PEDIDO</p>
+          <h2 id="titulo-carrinho">Carrinho</h2>
+        </div>
+        <span id="quantidade-itens" class="contador-carrinho">0 itens</span>
+      </div>
+      <div id="itens-carrinho" class="itens-carrinho" aria-live="polite">
+        <p class="item-vazio">Seu carrinho está vazio.</p>
+      </div>
+      <div class="total-carrinho">
+        <span>Total</span>
+        <strong id="total-carrinho">R$ 0,00</strong>
+      </div>
+      <form id="form-pedido" class="form-pedido">
+        <label for="nome-cliente">Seu nome</label>
+        <input id="nome-cliente" name="nome" type="text" autocomplete="name" maxlength="80" required>
+
+        <label for="observacao">Observação <span>(opcional)</span></label>
+        <textarea id="observacao" name="observacao" rows="3" maxlength="300"></textarea>
+
+        <button id="botao-enviar" class="botao-enviar" type="submit" disabled>Enviar pedido</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <span>Cantinho da Vila</span>
+    <span>Um pedido de cada vez, com carinho.</span>
+  </footer>
+</body>
+</html>
